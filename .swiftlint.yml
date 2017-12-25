@@ -1,0 +1,10 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - R.generated.swift
+  - Carthage
+disabled_rules:
+
+force_try: warning
+force_cast: warning
+cyclomatic_complexity: 25
+line_length: 150
