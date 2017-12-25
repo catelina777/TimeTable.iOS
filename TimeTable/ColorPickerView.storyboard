@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nZt-1C-ePT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W6</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Color PickerVC-->
+        <scene sceneID="Vmg-bp-2TE">
+            <objects>
+                <viewController id="nZt-1C-ePT" customClass="ColorPickerVC" customModule="TimeTable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fvj-aa-8pf"/>
+                        <viewControllerLayoutGuide type="bottom" id="sBz-Kh-CCc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zJn-2b-4oa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XE7-xV-bQM" customClass="TableView" customModule="Material">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTy-tl-bbH" userLabel="Top Bar View" customClass="TopBarView" customModule="TimeTable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNp-O7-nl5" customClass="IconButton" customModule="Material">
+                                        <rect key="frame" x="6" y="32" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="7Ee-13-e9s"/>
+                                            <constraint firstAttribute="width" constant="36" id="cTc-SZ-2Yn"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_keyboard_arrow_left"/>
+                                        <connections>
+                                            <action selector="didPressBackButton:" destination="nZt-1C-ePT" eventType="touchUpInside" id="mpo-lG-qaK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yn-t5-jwz">
+                                        <rect key="frame" x="163.5" y="41" width="49.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sNp-O7-nl5" secondAttribute="bottom" constant="2" id="XxZ-3Y-R7g"/>
+                                    <constraint firstItem="sNp-O7-nl5" firstAttribute="leading" secondItem="HTy-tl-bbH" secondAttribute="leading" constant="6" id="ghT-jb-53H"/>
+                                    <constraint firstAttribute="height" constant="70" id="jRo-NT-jQi"/>
+                                    <constraint firstItem="2Yn-t5-jwz" firstAttribute="centerX" secondItem="HTy-tl-bbH" secondAttribute="centerX" id="ncC-Rm-eqY"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Yn-t5-jwz" secondAttribute="bottom" constant="12" id="zhc-ee-Kd8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HTy-tl-bbH" firstAttribute="top" secondItem="zJn-2b-4oa" secondAttribute="top" id="8Jn-U9-N5J"/>
+                            <constraint firstItem="sBz-Kh-CCc" firstAttribute="top" secondItem="XE7-xV-bQM" secondAttribute="bottom" id="AUE-iY-YK0"/>
+                            <constraint firstAttribute="trailing" secondItem="HTy-tl-bbH" secondAttribute="trailing" id="GFD-iA-iOh"/>
+                            <constraint firstItem="HTy-tl-bbH" firstAttribute="leading" secondItem="zJn-2b-4oa" secondAttribute="leading" id="Yft-i7-4JS"/>
+                            <constraint firstAttribute="trailing" secondItem="XE7-xV-bQM" secondAttribute="trailing" id="mDj-uY-pdP"/>
+                            <constraint firstItem="XE7-xV-bQM" firstAttribute="top" secondItem="HTy-tl-bbH" secondAttribute="bottom" id="njr-jI-siS"/>
+                            <constraint firstItem="XE7-xV-bQM" firstAttribute="leading" secondItem="zJn-2b-4oa" secondAttribute="leading" id="xMc-16-Udo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="sNp-O7-nl5" id="g50-Jv-Jyo"/>
+                        <outlet property="colorPickerTableView" destination="XE7-xV-bQM" id="SpI-Y9-29A"/>
+                        <outlet property="topBarTitle" destination="2Yn-t5-jwz" id="M6A-hw-toI"/>
+                        <outlet property="topBarView" destination="HTy-tl-bbH" id="Waz-f5-8uD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWp-TO-vAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338.39999999999998" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_keyboard_arrow_left" width="36" height="36"/>
+    </resources>
+</document>

@@ -1,0 +1,4 @@
+github "CosmicMind/Material" "2.13.0"
+github "CosmicMind/Motion" "1.3.0"
+github "Friend-LGA/LGSideMenuController" "2.1.1"
+github "realm/realm-cocoa" "v3.0.2"

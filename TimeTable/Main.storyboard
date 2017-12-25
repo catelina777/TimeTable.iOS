@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xgn-Tg-OgG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="onA-le-Llj">
+            <objects>
+                <viewController id="xgn-Tg-OgG" customClass="MainVC" customModule="TimeTable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="unP-sR-98l"/>
+                        <viewControllerLayoutGuide type="bottom" id="S88-bL-pHU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yyc-fG-iW4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGg-WU-9Gv" customClass="ToolBarV" customModule="TimeTable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddb-tX-RME" userLabel="Week Button" customClass="IconButton" customModule="Material">
+                                        <rect key="frame" x="333" y="22" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="ljA-AJ-gVF"/>
+                                            <constraint firstAttribute="height" constant="36" id="sYo-Uh-hIj"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="ic_view_week"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="go4-WJ-iUQ" userLabel="Day Button" customClass="IconButton" customModule="Material">
+                                        <rect key="frame" x="333" y="22" width="36" height="36"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="ic_view_day"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3年前期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsO-ac-s94">
+                                        <rect key="frame" x="155.5" y="31" width="63.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3i2-ex-0RC" userLabel="Menu Button" customClass="IconButton" customModule="Material">
+                                        <rect key="frame" x="6" y="22" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="JXB-iI-jBd"/>
+                                            <constraint firstAttribute="width" constant="36" id="cCZ-v0-QMt"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="ic_menu"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3i2-ex-0RC" firstAttribute="bottom" secondItem="Ddb-tX-RME" secondAttribute="bottom" id="1C0-EE-eDJ"/>
+                                    <constraint firstItem="3i2-ex-0RC" firstAttribute="leading" secondItem="LGg-WU-9Gv" secondAttribute="leading" constant="6" id="AeL-vK-UIW"/>
+                                    <constraint firstAttribute="height" constant="60" id="B6N-eE-SNM"/>
+                                    <constraint firstItem="DsO-ac-s94" firstAttribute="centerX" secondItem="LGg-WU-9Gv" secondAttribute="centerX" id="MAG-KE-REp"/>
+                                    <constraint firstItem="go4-WJ-iUQ" firstAttribute="height" secondItem="Ddb-tX-RME" secondAttribute="height" id="XxI-Nh-gpO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ddb-tX-RME" secondAttribute="trailing" constant="6" id="ZOS-LG-4w1"/>
+                                    <constraint firstItem="go4-WJ-iUQ" firstAttribute="width" secondItem="Ddb-tX-RME" secondAttribute="width" id="kW3-lg-FVA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ddb-tX-RME" secondAttribute="bottom" constant="2" id="oAr-h5-x9W"/>
+                                    <constraint firstItem="go4-WJ-iUQ" firstAttribute="leading" secondItem="Ddb-tX-RME" secondAttribute="leading" id="wEZ-a4-uuG"/>
+                                    <constraint firstItem="go4-WJ-iUQ" firstAttribute="bottom" secondItem="Ddb-tX-RME" secondAttribute="bottom" id="wt5-ZN-Ow0"/>
+                                    <constraint firstAttribute="bottom" secondItem="DsO-ac-s94" secondAttribute="bottom" constant="12" id="ymk-2d-4o8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LGg-WU-9Gv" firstAttribute="top" secondItem="Yyc-fG-iW4" secondAttribute="top" id="Byh-b0-3JU"/>
+                            <constraint firstItem="LGg-WU-9Gv" firstAttribute="leading" secondItem="Yyc-fG-iW4" secondAttribute="leading" id="gj4-HP-deH"/>
+                            <constraint firstAttribute="trailing" secondItem="LGg-WU-9Gv" secondAttribute="trailing" id="tal-a4-4bE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dayButton" destination="go4-WJ-iUQ" id="va8-P5-URx"/>
+                        <outlet property="menuButton" destination="3i2-ex-0RC" id="bLn-Zh-uCe"/>
+                        <outlet property="toolBarV" destination="LGg-WU-9Gv" id="USv-NL-hEI"/>
+                        <outlet property="weekButton" destination="Ddb-tX-RME" id="17W-cT-af3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxV-qx-OUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+        <image name="ic_view_day" width="24" height="24"/>
+        <image name="ic_view_week" width="24" height="24"/>
+    </resources>
+</document>

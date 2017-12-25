@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TimetableWeekDayCell" customModule="TimeTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="24"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="24"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4r-HH-etL" userLabel="Paper View" customClass="View" customModule="Material">
+                        <rect key="frame" x="0.0" y="0.0" width="92" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCp-2B-Ya9">
+                                <rect key="frame" x="8" y="6" width="9" height="12"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bCp-2B-Ya9" firstAttribute="centerY" secondItem="S4r-HH-etL" secondAttribute="centerY" id="5Bs-L2-SgH"/>
+                            <constraint firstItem="bCp-2B-Ya9" firstAttribute="leading" secondItem="S4r-HH-etL" secondAttribute="leading" constant="8" id="f1j-O5-fv7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="S4r-HH-etL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FSq-b3-b8d"/>
+                <constraint firstAttribute="bottom" secondItem="S4r-HH-etL" secondAttribute="bottom" id="Jp5-Tr-CgT"/>
+                <constraint firstItem="S4r-HH-etL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="r4U-Ag-CQN"/>
+                <constraint firstAttribute="trailing" secondItem="S4r-HH-etL" secondAttribute="trailing" id="scI-r4-bBN"/>
+            </constraints>
+            <size key="customSize" width="92" height="24"/>
+            <connections>
+                <outlet property="paperView" destination="S4r-HH-etL" id="ou4-iq-9q8"/>
+                <outlet property="weekDayLabel" destination="bCp-2B-Ya9" id="Wmc-T9-1t9"/>
+            </connections>
+            <point key="canvasLocation" x="113" y="41"/>
+        </collectionViewCell>
+    </objects>
+</document>

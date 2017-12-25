@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TimetableContentCell" customModule="TimeTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="81" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="81" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nqg-GP-gp5" userLabel="Paper View" customClass="View" customModule="Material">
+                        <rect key="frame" x="2" y="2" width="77" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English 1" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKc-bv-wvD">
+                                <rect key="frame" x="1" y="8" width="75" height="62"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中村" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swe-Ty-wJH">
+                                <rect key="frame" x="1" y="92" width="75" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Yjt-zv-Jbq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="8"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="203" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5U-5X-NAx">
+                                <rect key="frame" x="1" y="78" width="75" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="f3J-AR-4am"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="8"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Swe-Ty-wJH" firstAttribute="leading" secondItem="Nqg-GP-gp5" secondAttribute="leading" constant="1" id="2ud-au-1hs"/>
+                            <constraint firstAttribute="trailing" secondItem="JKc-bv-wvD" secondAttribute="trailing" constant="1" id="5BH-Av-hMR"/>
+                            <constraint firstItem="JKc-bv-wvD" firstAttribute="top" secondItem="Nqg-GP-gp5" secondAttribute="top" constant="8" id="5nS-T9-fpi"/>
+                            <constraint firstItem="m5U-5X-NAx" firstAttribute="top" secondItem="JKc-bv-wvD" secondAttribute="bottom" constant="8" id="6Po-Rj-L76"/>
+                            <constraint firstItem="JKc-bv-wvD" firstAttribute="leading" secondItem="Nqg-GP-gp5" secondAttribute="leading" constant="1" id="PuD-Dy-n3a"/>
+                            <constraint firstItem="m5U-5X-NAx" firstAttribute="leading" secondItem="Nqg-GP-gp5" secondAttribute="leading" constant="1" id="SdM-Iw-Bbd"/>
+                            <constraint firstItem="Swe-Ty-wJH" firstAttribute="top" secondItem="m5U-5X-NAx" secondAttribute="bottom" constant="4" id="V9J-J0-79E"/>
+                            <constraint firstAttribute="bottom" secondItem="Swe-Ty-wJH" secondAttribute="bottom" constant="8" id="fXV-ZM-XgS"/>
+                            <constraint firstAttribute="trailing" secondItem="Swe-Ty-wJH" secondAttribute="trailing" constant="1" id="jrk-e4-l8W"/>
+                            <constraint firstAttribute="trailing" secondItem="m5U-5X-NAx" secondAttribute="trailing" constant="1" id="lfC-UU-6cK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Nqg-GP-gp5" secondAttribute="trailing" constant="2" id="6J8-0z-nM7"/>
+                <constraint firstItem="Nqg-GP-gp5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="AZD-xq-XEn"/>
+                <constraint firstAttribute="bottom" secondItem="Nqg-GP-gp5" secondAttribute="bottom" constant="2" id="Acg-rN-36P"/>
+                <constraint firstItem="Nqg-GP-gp5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="gJU-Ga-lhF"/>
+            </constraints>
+            <size key="customSize" width="81" height="124"/>
+            <connections>
+                <outlet property="classroomNumber" destination="m5U-5X-NAx" id="VlJ-o6-pdq"/>
+                <outlet property="paperView" destination="Nqg-GP-gp5" id="amn-hu-KXx"/>
+                <outlet property="subjectLabel" destination="JKc-bv-wvD" id="9q0-o0-gM0"/>
+                <outlet property="teacherName" destination="Swe-Ty-wJH" id="Gzh-Ny-xuj"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="91"/>
+        </collectionViewCell>
+    </objects>
+</document>

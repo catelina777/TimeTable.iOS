@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="znD-av-S8U">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Left MenuVC-->
+        <scene sceneID="Ucs-Es-EyY">
+            <objects>
+                <viewController id="znD-av-S8U" customClass="LeftMenuVC" customModule="TimeTable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4HY-0p-dBC"/>
+                        <viewControllerLayoutGuide type="bottom" id="kat-10-f09"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FMF-x3-qMX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXP-We-BID">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnP-3A-P9t" userLabel="Divider Line">
+                                        <rect key="frame" x="0.0" y="59" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="JPj-MQ-gyJ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timetable-Material" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYe-hR-64l">
+                                        <rect key="frame" x="16" y="25" width="202" height="22"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkK-Ka-Ukh" customClass="IconButton" customModule="Material">
+                                        <rect key="frame" x="333" y="21" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="p5n-Nj-141"/>
+                                            <constraint firstAttribute="width" constant="36" id="zNe-0L-JII"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="ic_settings"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="FnP-3A-P9t" firstAttribute="top" secondItem="mkK-Ka-Ukh" secondAttribute="bottom" constant="2" id="CFJ-ZT-R7E"/>
+                                    <constraint firstAttribute="trailing" secondItem="FnP-3A-P9t" secondAttribute="trailing" id="DBK-n2-i2A"/>
+                                    <constraint firstAttribute="trailing" secondItem="mkK-Ka-Ukh" secondAttribute="trailing" constant="6" id="HGB-xu-eqf"/>
+                                    <constraint firstAttribute="bottom" secondItem="FnP-3A-P9t" secondAttribute="bottom" id="O5M-p4-ruf"/>
+                                    <constraint firstAttribute="height" constant="60" id="XAK-vP-MEJ"/>
+                                    <constraint firstItem="FnP-3A-P9t" firstAttribute="leading" secondItem="rXP-We-BID" secondAttribute="leading" id="YTR-pW-IKF"/>
+                                    <constraint firstItem="FnP-3A-P9t" firstAttribute="top" secondItem="KYe-hR-64l" secondAttribute="bottom" constant="12" id="ge1-yv-rrA"/>
+                                    <constraint firstItem="KYe-hR-64l" firstAttribute="leading" secondItem="rXP-We-BID" secondAttribute="leading" constant="16" id="qBE-CP-ikR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rXP-We-BID" secondAttribute="trailing" id="3nD-7w-35K"/>
+                            <constraint firstItem="rXP-We-BID" firstAttribute="top" secondItem="FMF-x3-qMX" secondAttribute="top" id="hiw-5W-dUy"/>
+                            <constraint firstItem="rXP-We-BID" firstAttribute="leading" secondItem="FMF-x3-qMX" secondAttribute="leading" id="xuc-E6-HI5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="settingButton" destination="mkK-Ka-Ukh" id="xHP-Ov-EOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aq5-ls-Ivq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224.80000000000001" y="187.55622188905548"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_settings" width="24" height="24"/>
+    </resources>
+</document>
