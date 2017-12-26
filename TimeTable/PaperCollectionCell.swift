@@ -11,5 +11,5 @@ import Material
 
 class PaperCollectionCell: CollectionViewCell {
 
-    @IBOutlet weak var paperView: View!
+    @IBOutlet weak var paperV: View!
 }

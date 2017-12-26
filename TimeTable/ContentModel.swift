@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class ContentModel: BaseModel {
+final class ContentModel: BaseModel {
 
     @objc dynamic var subjectName: String?
     @objc dynamic var classroomNumber: String?

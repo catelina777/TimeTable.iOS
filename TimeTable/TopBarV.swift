@@ -9,12 +9,13 @@
 import UIKit
 import Material
 
-final class TopBarView: View {
+final class TopBarV: View {
+
     var colorLayer: CALayer!
     var isAnimating = false
 }
 
-extension TopBarView {
+extension TopBarV {
 
     func playExpandingAnimation(with color: UIColor) {
         let duration = 0.35
@@ -55,7 +56,7 @@ extension TopBarView {
     }
 }
 
-extension TopBarView: CAAnimationDelegate {
+extension TopBarV: CAAnimationDelegate {
 
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         isAnimating = false

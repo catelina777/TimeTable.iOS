@@ -11,16 +11,16 @@ import UIKit
 extension TimetableVC {
 
     func prepareCollectionViews() {
-        timeTableCollectionView.delegate = self
-        timeTableCollectionView.dataSource = self
-        timeTableCollectionView.register(cellType: TimetableContentCell.self)
+        timeTableCollectionV.delegate = self
+        timeTableCollectionV.dataSource = self
+        timeTableCollectionV.register(cellType: TimetableContentCell.self)
 
-        timeTableColumnHeaderCollectionView.delegate = self
-        timeTableColumnHeaderCollectionView.dataSource = self
-        timeTableColumnHeaderCollectionView.register(cellType: TimetableWeekDayCell.self)
+        timeTableColumnHeaderCollectionV.delegate = self
+        timeTableColumnHeaderCollectionV.dataSource = self
+        timeTableColumnHeaderCollectionV.register(cellType: TimetableWeekDayCell.self)
 
-        timeTableRowHeaderCollectionView.delegate = self
-        timeTableRowHeaderCollectionView.dataSource = self
-        timeTableRowHeaderCollectionView.register(cellType: TimetableTimeCell.self)
+        timeTableRowHeaderCollectionV.delegate = self
+        timeTableRowHeaderCollectionV.dataSource = self
+        timeTableRowHeaderCollectionV.register(cellType: TimetableTimeCell.self)
     }
 }

@@ -35,6 +35,6 @@ extension ColorPickerVC: UITableViewDataSource {
                    didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
         let color = Palette.getColor(by: index)
-        topBarView.playExpandingAnimation(with: color)
+        topBarV.playExpandingAnimation(with: color)
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 import Material
 import MaterialComponents.MaterialPalettes
 
-class ColorPickerCell: TableViewCell {
+final class ColorPickerCell: TableViewCell {
 
     @IBOutlet weak var colorImageView: UIImageView!
     @IBOutlet weak var checkImageView: UIImageView!

@@ -9,11 +9,11 @@
 import UIKit
 import Material
 
-class TimetableVC: BaseVC {
+final class TimetableVC: BaseVC {
 
-    @IBOutlet var timeTableCollectionView: UICollectionView!
-    @IBOutlet var timeTableColumnHeaderCollectionView: UICollectionView!
-    @IBOutlet var timeTableRowHeaderCollectionView: UICollectionView!
+    @IBOutlet var timeTableCollectionV: UICollectionView!
+    @IBOutlet var timeTableColumnHeaderCollectionV: UICollectionView!
+    @IBOutlet var timeTableRowHeaderCollectionV: UICollectionView!
 
     var numberOfTimetable = 6
     var numberOfWeekDay = 6

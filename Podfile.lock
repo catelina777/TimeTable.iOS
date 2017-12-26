@@ -1,99 +1,21 @@
 PODS:
-  - MaterialComponents/AnimationTiming (43.0.0)
-  - MaterialComponents/Buttons (43.0.0):
-    - MaterialComponents/Buttons/ColorThemer (= 43.0.0)
-    - MaterialComponents/Buttons/Component (= 43.0.0)
-    - MaterialComponents/Buttons/TitleColorAccessibilityMutator (= 43.0.0)
-    - MaterialComponents/private/Math
-  - MaterialComponents/Buttons/ColorThemer (43.0.0):
-    - MaterialComponents/Buttons/Component
-    - MaterialComponents/private/Math
-    - MaterialComponents/Themes
-  - MaterialComponents/Buttons/Component (43.0.0):
-    - MaterialComponents/Ink
-    - MaterialComponents/private/Math
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
-    - MDFTextAccessibility
-  - MaterialComponents/Buttons/TitleColorAccessibilityMutator (43.0.0):
-    - MaterialComponents/Buttons/Component
-    - MaterialComponents/private/Math
-    - MDFTextAccessibility
-  - MaterialComponents/Dialogs (43.0.0):
-    - MaterialComponents/Dialogs/ColorThemer (= 43.0.0)
-    - MaterialComponents/Dialogs/Component (= 43.0.0)
-  - MaterialComponents/Dialogs/ColorThemer (43.0.0):
-    - MaterialComponents/Dialogs/Component
-    - MaterialComponents/Themes
-  - MaterialComponents/Dialogs/Component (43.0.0):
-    - MaterialComponents/Buttons
-    - MaterialComponents/private/KeyboardWatcher
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MDFInternationalization
-    - MotionAnimator (~> 2.5)
-    - MotionTransitioning (~> 5.0)
-  - MaterialComponents/Ink (43.0.0):
-    - MaterialComponents/Ink/ColorThemer (= 43.0.0)
-    - MaterialComponents/Ink/Component (= 43.0.0)
-  - MaterialComponents/Ink/ColorThemer (43.0.0):
-    - MaterialComponents/Ink/Component
-    - MaterialComponents/Themes
-  - MaterialComponents/Ink/Component (43.0.0):
-    - MaterialComponents/private/Math
-  - MaterialComponents/OverlayWindow (43.0.0):
-    - MaterialComponents/private/Application
   - MaterialComponents/Palettes (43.0.0)
-  - MaterialComponents/private/Application (43.0.0)
-  - MaterialComponents/private/KeyboardWatcher (43.0.0):
-    - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (43.0.0)
-  - MaterialComponents/private/Overlay (43.0.0)
-  - MaterialComponents/ShadowElevations (43.0.0)
-  - MaterialComponents/ShadowLayer (43.0.0):
-    - MaterialComponents/ShadowElevations
-  - MaterialComponents/Snackbar (43.0.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Buttons
-    - MaterialComponents/OverlayWindow
-    - MaterialComponents/private/Application
-    - MaterialComponents/private/KeyboardWatcher
-    - MaterialComponents/private/Overlay
-    - MaterialComponents/Typography
-  - MaterialComponents/Themes (43.0.0)
-  - MaterialComponents/Typography (43.0.0):
-    - MaterialComponents/private/Application
-  - MDFInternationalization (1.0.4)
-  - MDFTextAccessibility (1.2.0)
-  - MotionAnimator (2.8.0):
-    - MotionInterchange (~> 1.6)
-  - MotionInterchange (1.6.0)
-  - MotionTransitioning (5.0.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
   - SwiftLint (0.24.0)
 
 DEPENDENCIES:
-  - MaterialComponents/Dialogs
   - MaterialComponents/Palettes
-  - MaterialComponents/Snackbar
   - R.swift
   - SwiftLint
 
 SPEC CHECKSUMS:
   MaterialComponents: dc77450aafa8639522bb15aa9440a1a3b6946cd3
-  MDFInternationalization: e355b0cebecf53d60233bd267084e49366c82513
-  MDFTextAccessibility: 94098925e0853551c5a311ce7c1ecefbe297cdb6
-  MotionAnimator: 8af077dac084b7880a4d2ddae31a26171087bd87
-  MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
-  MotionTransitioning: 23d25edc2f4606efb922403cbac6d81af37aa33a
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
 
-PODFILE CHECKSUM: 45f76beedc5c269c88571118363890d1f8d66242
+PODFILE CHECKSUM: 85c1b9616c49de15f0b7a2e9d270bc7e7bec8112
 
 COCOAPODS: 1.4.0.rc.1
