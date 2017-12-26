@@ -10,6 +10,7 @@ import Foundation
 import RealmSwift
 
 class BaseModel: Object {
+    
     @objc dynamic var identifier: String?
 
     override static func primaryKey() -> String? {

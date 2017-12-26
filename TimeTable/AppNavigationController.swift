@@ -9,7 +9,8 @@
 import UIKit
 import Material
 
-class AppNavigationDrawerController: NavigationDrawerController {
+final class AppNavigationDrawerController: NavigationDrawerController {
+    
     open override func prepare() {
         super.prepare()
         delegate = self

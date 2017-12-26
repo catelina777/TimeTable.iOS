@@ -9,6 +9,6 @@
 import UIKit
 import Material
 
-class ToolBarV: View {
+final class ToolBarV: View {
 
 }

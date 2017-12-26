@@ -10,10 +10,9 @@ import UIKit
 import Material
 import MaterialComponents.MaterialPalettes
 
-class EditTimetableVC: BaseVC {
+final class EditTimetableVC: BaseVC {
 
-    @IBOutlet weak var topBarView: TopBarView!
-    let topBarColorLayer = Layer()
+    @IBOutlet weak var topBarView: TopBarV!
 
     @IBOutlet weak var subjectNameTextField: TextField!
     @IBOutlet weak var classroomTextField: TextField!
@@ -25,12 +24,12 @@ class EditTimetableVC: BaseVC {
     @IBOutlet weak var saveButton: IconButton!
     @IBOutlet weak var colorPickerPulseButton: Button!
 
-    @IBOutlet weak var subjectNameIconImageView: UIImageView!
-    @IBOutlet weak var classRoomIconImageView: UIImageView!
-    @IBOutlet weak var teacherNameIconImageView: UIImageView!
-    @IBOutlet weak var creditNumberIconImageView: UIImageView!
-    @IBOutlet weak var colorIconImageView: UIImageView!
-    @IBOutlet weak var arrowRightImageView: UIImageView!
+    @IBOutlet weak var subjectNameIconImageV: UIImageView!
+    @IBOutlet weak var classRoomIconImageV: UIImageView!
+    @IBOutlet weak var teacherNameIconImageV: UIImageView!
+    @IBOutlet weak var creditNumberIconImageV: UIImageView!
+    @IBOutlet weak var colorIconImageV: UIImageView!
+    @IBOutlet weak var arrowRightImageV: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

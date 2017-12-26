@@ -13,7 +13,7 @@
 		DB0924F01EE302F300F0C50F /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0924EF1EE302F300F0C50F /* BaseVC.swift */; };
 		DB0924F31EE3034F00F0C50F /* BaseVCE.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0924F21EE3034F00F0C50F /* BaseVCE.swift */; };
 		DB0B21901FD305CF006BCB58 /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0B218F1FD305CF006BCB58 /* Motion.framework */; };
-		DB187FA41EF7CEC9003C015F /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB187FA31EF7CEC9003C015F /* TopBarView.swift */; };
+		DB187FA41EF7CEC9003C015F /* TopBarV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB187FA31EF7CEC9003C015F /* TopBarV.swift */; };
 		DB21DC971ED2D99700ADC2F0 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB21DC961ED2D99700ADC2F0 /* TextFieldExtension.swift */; };
 		DB21DC991ED2DFA300ADC2F0 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB21DC981ED2DFA300ADC2F0 /* UITableViewExtension.swift */; };
 		DB5D9BEB1F0092DA0074E9E3 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D9BEA1F0092DA0074E9E3 /* UILabelExtension.swift */; };
@@ -80,7 +80,7 @@
 		DB0924EF1EE302F300F0C50F /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		DB0924F21EE3034F00F0C50F /* BaseVCE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVCE.swift; sourceTree = "<group>"; };
 		DB0B218F1FD305CF006BCB58 /* Motion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Motion.framework; path = Carthage/Build/iOS/Motion.framework; sourceTree = "<group>"; };
-		DB187FA31EF7CEC9003C015F /* TopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		DB187FA31EF7CEC9003C015F /* TopBarV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarV.swift; sourceTree = "<group>"; };
 		DB21DC961ED2D99700ADC2F0 /* TextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		DB21DC981ED2DFA300ADC2F0 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		DB5D9BEA1F0092DA0074E9E3 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		06AE5F321FE2514100420E42 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				DB187FA31EF7CEC9003C015F /* TopBarView.swift */,
+				DB187FA31EF7CEC9003C015F /* TopBarV.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -256,8 +256,8 @@
 		DB6E5B9F1EA45D4F00406F65 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DBE677E21F023DD00069EF26 /* Main */,
 				DB0924F11EE3034500F0C50F /* Base */,
+				DBE677E21F023DD00069EF26 /* Main */,
 				DB9ED2071EA9C35C0002FE7B /* Timetable */,
 				DB80B6BB1F03656200D8F831 /* LeftMenu */,
 				DBD1EF521ECEFC8400C3FCF8 /* EditTimetable */,
@@ -710,7 +710,7 @@
 				DBE677E61F0240060069EF26 /* MainVCE.swift in Sources */,
 				DB7E2B3A1F14CE7700D92346 /* SeasonModel.swift in Sources */,
 				DB9ED2011EA9BA310002FE7B /* TimetableTimeCell.swift in Sources */,
-				DB187FA41EF7CEC9003C015F /* TopBarView.swift in Sources */,
+				DB187FA41EF7CEC9003C015F /* TopBarV.swift in Sources */,
 				DB6E5BAF1EA4707200406F65 /* AppNavigationController.swift in Sources */,
 				DB8733F01EAC7EA700A1B1C7 /* Timetable+UICollectionViewDelegate.swift in Sources */,
 				DB21DC971ED2D99700ADC2F0 /* TextFieldExtension.swift in Sources */,

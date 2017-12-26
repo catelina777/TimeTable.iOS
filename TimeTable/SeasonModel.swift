@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class SeasonModel: BaseModel {
+final class SeasonModel: BaseModel {
 
     @objc dynamic var seasonName: String?
     let timetables = List<ContentModel>()
