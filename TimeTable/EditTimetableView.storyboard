@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0Xp-jP-t6K">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0Xp-jP-t6K">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W3</string>
+            <string>HiraginoSans-W6</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Edit TimetableVC-->
         <scene sceneID="R6t-do-N29">
@@ -17,17 +20,17 @@
                         <viewControllerLayoutGuide type="bottom" id="G6T-Cw-XKm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VJt-s2-yVZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f3s-R9-aun">
-                                <rect key="frame" x="0.0" y="78" width="414" height="400"/>
+                                <rect key="frame" x="0.0" y="78" width="600" height="400"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqq-kP-rK9" userLabel="Subject Name Background">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0FF-SR-VAN" customClass="TextField" customModule="Material">
-                                                <rect key="frame" x="64" y="42" width="334" height="30"/>
+                                                <rect key="frame" x="64" y="42" width="520" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -50,10 +53,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db2-D7-Zeb" userLabel="Class Room Background">
-                                        <rect key="frame" x="0.0" y="80" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="80" width="600" height="80"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1FW-Mf-STR" customClass="TextField" customModule="Material">
-                                                <rect key="frame" x="64" y="42" width="334" height="30"/>
+                                                <rect key="frame" x="64" y="42" width="520" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -75,10 +78,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxm-IU-uIx" userLabel="Teacher Name Background">
-                                        <rect key="frame" x="0.0" y="160" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="160" width="600" height="80"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTg-nV-wXB" customClass="TextField" customModule="Material">
-                                                <rect key="frame" x="64" y="42" width="334" height="30"/>
+                                                <rect key="frame" x="64" y="42" width="520" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -101,7 +104,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9h-DG-ykC" userLabel="Credit Number Background">
-                                        <rect key="frame" x="0.0" y="240" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="240" width="600" height="80"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_school" translatesAutoresizingMaskIntoConstraints="NO" id="uwb-b7-qYq">
                                                 <rect key="frame" x="16" y="40" width="32" height="32"/>
@@ -129,7 +132,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iP7-rm-pFa" userLabel="Color Picker Background" customClass="View" customModule="Material">
-                                        <rect key="frame" x="0.0" y="320" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="320" width="600" height="80"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_fiber_manual_record" translatesAutoresizingMaskIntoConstraints="NO" id="ch2-0H-Avn">
                                                 <rect key="frame" x="16" y="32" width="32" height="32"/>
@@ -139,7 +142,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deep Orange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-3r-HJf">
-                                                <rect key="frame" x="64" y="38" width="334" height="20"/>
+                                                <rect key="frame" x="64" y="38" width="520" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="mof-KF-YwM"/>
                                                 </constraints>
@@ -148,28 +151,28 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_keyboard_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="MiF-v1-4T0">
-                                                <rect key="frame" x="366" y="32" width="32" height="32"/>
+                                                <rect key="frame" x="552" y="32" width="32" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="Xbz-cq-xx2"/>
                                                     <constraint firstAttribute="width" constant="32" id="ePA-Fa-Mfj"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdg-mO-dmH" userLabel="Upper Divider">
-                                                <rect key="frame" x="0.0" y="15" width="414" height="1"/>
+                                                <rect key="frame" x="0.0" y="15" width="600" height="1"/>
                                                 <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.5" id="3Pa-bj-i0y"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOV-tz-T6K" userLabel="Bottom Divider">
-                                                <rect key="frame" x="0.0" y="79" width="414" height="1"/>
+                                                <rect key="frame" x="0.0" y="79" width="600" height="1"/>
                                                 <color key="backgroundColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="0.5" id="OWN-Lp-rkP"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MH-4S-G10" customClass="Button" customModule="Material">
-                                                <rect key="frame" x="0.0" y="16" width="414" height="64"/>
+                                                <rect key="frame" x="0.0" y="16" width="600" height="64"/>
                                                 <connections>
                                                     <action selector="didPressedColorPickerButton:" destination="0Xp-jP-t6K" eventType="touchUpInside" id="JLt-NF-ROa"/>
                                                 </connections>
@@ -210,8 +213,8 @@
                                     <constraint firstAttribute="height" constant="400" id="yIx-yR-HBB"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnS-CF-uAk" userLabel="Top Bar View" customClass="TopBarView" customModule="TimeTable" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnS-CF-uAk" userLabel="Top Bar View" customClass="TopBarV" customModule="TimeTable" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAP-DR-pwC" customClass="IconButton" customModule="Material">
                                         <rect key="frame" x="6" y="32" width="36" height="36"/>
@@ -226,7 +229,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmN-tf-y1C" customClass="IconButton" customModule="Material">
-                                        <rect key="frame" x="360" y="28" width="48" height="40"/>
+                                        <rect key="frame" x="546" y="28" width="48" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="IIp-k3-oYw"/>
                                             <constraint firstAttribute="width" constant="48" id="Szm-o5-5QA"/>
@@ -240,7 +243,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火曜2時間目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krg-J7-Cda">
-                                        <rect key="frame" x="158.33333333333334" y="41" width="97.333333333333314" height="17"/>
+                                        <rect key="frame" x="251.5" y="41" width="97.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -258,7 +261,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEu-gC-JVV" userLabel="Ad View">
-                                <rect key="frame" x="0.0" y="691" width="414" height="45"/>
+                                <rect key="frame" x="0.0" y="555" width="600" height="45"/>
                                 <color key="backgroundColor" red="0.63529411759999999" green="0.019607843140000001" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="pKa-lb-vY4"/>
@@ -284,19 +287,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="Xlj-Ei-t0c"/>
                     <connections>
-                        <outlet property="arrowRightImageView" destination="MiF-v1-4T0" id="DGg-Ng-u9D"/>
-                        <outlet property="classRoomIconImageView" destination="2Ma-AH-QwA" id="PcP-8B-UfT"/>
+                        <outlet property="arrowRightImageV" destination="MiF-v1-4T0" id="DGg-Ng-u9D"/>
+                        <outlet property="classRoomIconImageV" destination="2Ma-AH-QwA" id="PcP-8B-UfT"/>
                         <outlet property="classroomTextField" destination="1FW-Mf-STR" id="xM1-61-4fp"/>
                         <outlet property="closeButton" destination="bAP-DR-pwC" id="Oi8-0t-gcs"/>
-                        <outlet property="colorIconImageView" destination="ch2-0H-Avn" id="nOO-Uv-Adp"/>
+                        <outlet property="colorIconImageV" destination="ch2-0H-Avn" id="nOO-Uv-Adp"/>
                         <outlet property="colorLabel" destination="eXX-3r-HJf" id="3E6-cz-Sjt"/>
                         <outlet property="colorPickerPulseButton" destination="3MH-4S-G10" id="oeJ-mT-m6a"/>
-                        <outlet property="creditNumberIconImageView" destination="uwb-b7-qYq" id="rJD-dF-TZc"/>
+                        <outlet property="creditNumberIconImageV" destination="uwb-b7-qYq" id="rJD-dF-TZc"/>
                         <outlet property="creditNumberTextField" destination="YBJ-61-2xh" id="wqk-98-E5Y"/>
                         <outlet property="saveButton" destination="nmN-tf-y1C" id="Ti4-Kd-EF0"/>
-                        <outlet property="subjectNameIconImageView" destination="ril-aE-0qL" id="aFi-3b-B2z"/>
+                        <outlet property="subjectNameIconImageV" destination="ril-aE-0qL" id="aFi-3b-B2z"/>
                         <outlet property="subjectNameTextField" destination="0FF-SR-VAN" id="hnz-Ng-HKm"/>
-                        <outlet property="teacherNameIconImageView" destination="VwG-kH-W0u" id="mYc-7J-Vhn"/>
+                        <outlet property="teacherNameIconImageV" destination="VwG-kH-W0u" id="mYc-7J-Vhn"/>
                         <outlet property="teacherNameTextField" destination="dTg-nV-wXB" id="D96-4r-GfH"/>
                         <outlet property="topBarView" destination="QnS-CF-uAk" id="Hyh-cs-ysk"/>
                     </connections>

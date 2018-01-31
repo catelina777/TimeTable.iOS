@@ -9,7 +9,7 @@
 import UIKit
 import Material
 
-class TimetableContentCell: PaperCollectionCell {
+final class TimetableContentCell: PaperCollectionCell {
 
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var classroomNumber: UILabel!
@@ -25,7 +25,7 @@ class TimetableContentCell: PaperCollectionCell {
     }
 
     func prepareDepth(preset: DepthPreset) {
-        paperView.depthPreset = preset
+        paperV.depthPreset = preset
     }
 
     func prepareLabel() {

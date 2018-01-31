@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D54-0X-0LU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D54-0X-0LU">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -135,9 +136,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="P9J-AO-tIa"/>
                     <connections>
-                        <outlet property="timeTableCollectionView" destination="DtJ-po-X2F" id="H0m-M7-PeJ"/>
-                        <outlet property="timeTableColumnHeaderCollectionView" destination="0wv-Gy-qLP" id="b4u-MF-jhG"/>
-                        <outlet property="timeTableRowHeaderCollectionView" destination="wJ9-LR-Us3" id="nLC-3e-YYq"/>
+                        <outlet property="timeTableCollectionV" destination="DtJ-po-X2F" id="H0m-M7-PeJ"/>
+                        <outlet property="timeTableColumnHeaderCollectionV" destination="0wv-Gy-qLP" id="b4u-MF-jhG"/>
+                        <outlet property="timeTableRowHeaderCollectionV" destination="wJ9-LR-Us3" id="nLC-3e-YYq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLu-eT-KXT" userLabel="First Responder" sceneMemberID="firstResponder"/>

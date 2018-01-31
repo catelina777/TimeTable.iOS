@@ -10,11 +10,11 @@ import UIKit
 import Material
 import MaterialComponents.MaterialPalettes
 
-class ColorPickerVC: BaseVC {
+final class ColorPickerVC: BaseVC {
 
     @IBOutlet weak var backButton: IconButton!
-    @IBOutlet weak var colorPickerTableView: TableView!
-    @IBOutlet weak var topBarView: TopBarView!
+    @IBOutlet weak var colorPickerTableV: TableView!
+    @IBOutlet weak var topBarV: TopBarV!
     @IBOutlet weak var topBarTitle: UILabel!
 
     override func viewDidLoad() {

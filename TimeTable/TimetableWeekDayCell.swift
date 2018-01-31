@@ -9,7 +9,7 @@
 import UIKit
 import Material
 
-class TimetableWeekDayCell: PaperCollectionCell {
+final class TimetableWeekDayCell: PaperCollectionCell {
 
     @IBOutlet weak var weekDayLabel: UILabel!
 
@@ -23,7 +23,7 @@ class TimetableWeekDayCell: PaperCollectionCell {
     }
 
     func prepareDepth(preset: DepthPreset) {
-        paperView.depthPreset = preset
+        paperV.depthPreset = preset
     }
 
     func prepareLabel() {

@@ -24,24 +24,24 @@ extension EditTimetableVC {
         subjectNameTextField.placeholder = "科目名"
         subjectNameTextField.set(defaultColor: secondFontColor,
                                  activeColor: themeColor)
-        subjectNameIconImageView.image = R.image.ic_create()?.withRenderingMode(.alwaysTemplate)
-        subjectNameIconImageView.tintColor = buttonColor
+        subjectNameIconImageV.image = R.image.ic_create()?.withRenderingMode(.alwaysTemplate)
+        subjectNameIconImageV.tintColor = buttonColor
     }
 
     func prepareClassroomField() {
         classroomTextField.placeholder = "教室"
         classroomTextField.set(defaultColor: secondFontColor,
                                activeColor: themeColor)
-        classRoomIconImageView.image = R.image.ic_room()?.withRenderingMode(.alwaysTemplate)
-        classRoomIconImageView.tintColor = buttonColor
+        classRoomIconImageV.image = R.image.ic_room()?.withRenderingMode(.alwaysTemplate)
+        classRoomIconImageV.tintColor = buttonColor
     }
 
     func prepareTeacherNameField() {
         teacherNameTextField.placeholder = "教員名"
         teacherNameTextField.set(defaultColor: secondFontColor,
                                  activeColor: themeColor)
-        teacherNameIconImageView.image = R.image.ic_person()?.withRenderingMode(.alwaysTemplate)
-        teacherNameIconImageView.tintColor = buttonColor
+        teacherNameIconImageV.image = R.image.ic_person()?.withRenderingMode(.alwaysTemplate)
+        teacherNameIconImageV.tintColor = buttonColor
     }
 
     func prepareCreditNumberField() {
@@ -49,15 +49,15 @@ extension EditTimetableVC {
         creditNumberTextField.set(defaultColor: secondFontColor,
                                   activeColor: themeColor)
         creditNumberTextField.keyboardType = .numberPad
-        creditNumberIconImageView.image = R.image.ic_school()?.withRenderingMode(.alwaysTemplate)
-        creditNumberIconImageView.tintColor = buttonColor
+        creditNumberIconImageV.image = R.image.ic_school()?.withRenderingMode(.alwaysTemplate)
+        creditNumberIconImageV.tintColor = buttonColor
     }
 
     func prepareColorPickerField() {
         colorPickerPulseButton.pulseAnimation = .pointWithBacking
-        colorIconImageView.image = R.image.ic_fiber_manual_record()?.withRenderingMode(.alwaysTemplate)
-        colorIconImageView.tintColor = themeColor
-        arrowRightImageView.image = R.image.ic_keyboard_arrow_right()?.withRenderingMode(.alwaysTemplate)
-        arrowRightImageView.tintColor = buttonColor
+        colorIconImageV.image = R.image.ic_fiber_manual_record()?.withRenderingMode(.alwaysTemplate)
+        colorIconImageV.tintColor = themeColor
+        arrowRightImageV.image = R.image.ic_keyboard_arrow_right()?.withRenderingMode(.alwaysTemplate)
+        arrowRightImageV.tintColor = buttonColor
     }
 }

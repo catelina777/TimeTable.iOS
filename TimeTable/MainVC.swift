@@ -9,7 +9,7 @@
 import UIKit
 import Material
 
-class MainVC: UIViewController {
+final class MainVC: UIViewController {
 
     @IBOutlet weak var menuButton: IconButton! {
         didSet {

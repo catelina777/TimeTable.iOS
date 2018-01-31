@@ -10,7 +10,7 @@ import UIKit
 import Material
 import MaterialComponents.MaterialPalettes
 
-class LeftMenuVC: UIViewController {
+final class LeftMenuVC: UIViewController {
 
     @IBOutlet weak var settingButton: IconButton! {
         didSet {
@@ -21,17 +21,5 @@ class LeftMenuVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
-    }
-
-    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
-        return .fade
     }
 }
