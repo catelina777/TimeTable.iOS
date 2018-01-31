@@ -1,9 +1,9 @@
 PODS:
-  - MaterialComponents/Palettes (43.0.0)
+  - MaterialComponents/Palettes (44.5.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
-  - SwiftLint (0.24.0)
+  - SwiftLint (0.24.2)
 
 DEPENDENCIES:
   - MaterialComponents/Palettes
@@ -11,11 +11,11 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC CHECKSUMS:
-  MaterialComponents: dc77450aafa8639522bb15aa9440a1a3b6946cd3
+  MaterialComponents: d50819588c896bbc206f2b145e00385159ef5f22
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
-  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
 
 PODFILE CHECKSUM: 85c1b9616c49de15f0b7a2e9d270bc7e7bec8112
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.4.0
